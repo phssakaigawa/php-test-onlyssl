@@ -1,4 +1,4 @@
 SetEnvIf X-Forwarded-Proto "https" allowed_protocol
-Order Deny,Allow
-Deny from All
-Allow from env=allowed_protocol
+Order Allow,Deny
+Allow from All
+Deny from env=allowed_protocol
